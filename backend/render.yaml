@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: supportgenie-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: GROQ_API_KEY
+        sync: false
+      - key: CHROMA_PATH
+        value: /var/data/chroma
+      - key: FRONTEND_URL
+        value: https://your-vercel-app.vercel.app
+    disk:
+      name: supportgenie-data
+      mountPath: /var/data
+      sizeGB: 1

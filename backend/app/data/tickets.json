@@ -1,0 +1,11 @@
+[
+  {
+    "ticket_id": "TKT-82e40ca1",
+    "caller_phone": "+1234567890",
+    "reason": "Customer requested human escalation",
+    "priority": "High",
+    "transcript": "ok I am very frustrated connect me to a human",
+    "status": "Open",
+    "timestamp": "2026-05-22T12:17:37.912798"
+  }
+]

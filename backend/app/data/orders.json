@@ -1,0 +1,30 @@
+[
+  {
+    "order_id": "1023",
+    "customer_name": "Rahul",
+    "status": "Out for delivery",
+    "expected_delivery": "Today by 7 PM",
+    "product": "Bluetooth Headphones"
+  },
+  {
+    "order_id": "2045",
+    "customer_name": "Anjali",
+    "status": "Refund initiated",
+    "expected_delivery": "Refund will be completed in 3 working days",
+    "product": "Smart Watch"
+  },
+  {
+    "order_id": "3301",
+    "customer_name": "Vikram",
+    "status": "Delayed",
+    "expected_delivery": "Tomorrow by 6 PM",
+    "product": "Laptop Stand"
+  },
+  {
+    "order_id": "7788",
+    "customer_name": "Meera",
+    "status": "Delivered",
+    "expected_delivery": "Delivered yesterday",
+    "product": "Wireless Keyboard"
+  }
+]

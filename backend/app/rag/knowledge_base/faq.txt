@@ -1,0 +1,1 @@
+Customers can track orders using their order ID. For payment failures, customers should wait 30 minutes and check whether money was refunded automatically. For urgent support, customers can request human escalation.

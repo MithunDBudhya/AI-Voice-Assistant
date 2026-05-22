@@ -1,0 +1,10 @@
+[
+  {
+    "callback_id": "CB-f240340a",
+    "caller_phone": "+1234567890",
+    "preferred_time": "tomorrow morning",
+    "reason": "Customer requested a callback",
+    "status": "Pending",
+    "timestamp": "2026-05-22T12:17:26.854208"
+  }
+]
