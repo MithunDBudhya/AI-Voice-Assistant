@@ -22,7 +22,7 @@ function App() {
             <div className="flex flex-col flex-1 overflow-hidden">
               <Topbar />
               <main className="flex-1 overflow-y-auto p-6 relative">
-                <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/10 to-slate-950/50 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-br from-orange-950/10 to-slate-950/50 pointer-events-none" />
                 <div className="relative z-10 h-full">
                   <Routes>
                     <Route path="/dashboard" element={<Dashboard />} />

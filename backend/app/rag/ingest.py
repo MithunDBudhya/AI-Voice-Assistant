@@ -17,8 +17,11 @@ def ingest_documents():
             with open(file_path, "r", encoding="utf-8") as f:
                 content = f.read().strip()
                 if content:
-                    documents.append(content)
-                    metadatas.append({"source": filename})
+                    # Split into sections based on double newlines
+                    chunks = [c.strip() for c in content.split("\n\n") if c.strip()]
+                    for chunk in chunks:
+                        documents.append(chunk)
+                        metadatas.append({"source": filename})
                     
     if not documents:
         return

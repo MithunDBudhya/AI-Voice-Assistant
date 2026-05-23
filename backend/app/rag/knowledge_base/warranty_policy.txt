@@ -1,1 +1,21 @@
-Most electronics include a 1-year limited warranty covering manufacturing defects. Physical damage, water damage, and unauthorized repair are not covered under warranty.
+AMAZON INDIA PRODUCT WARRANTY POLICY
+
+Last Updated: May 2026
+
+1. BRAND WARRANTY VS SELLER WARRANTY
+Most branded products sold on Amazon India (electronics, home appliances, mobile phones) come with a manufacturer or brand warranty:
+- Brand Warranty: The warranty is provided and fulfilled directly by the brand (e.g., Samsung, Apple, HP, Sony). The warranty duration is typically 1 year from the date of purchase. For any defects, the customer must contact the brand's authorized service network.
+- Seller Warranty: For certain imported, unbranded, or refurbished items, the warranty is provided by the seller. The seller's contact details are listed on the product detail page and invoice. For refurbished items, Amazon Renewed offers a 6-month seller warranty.
+
+2. CLAIMING WARRANTY
+To claim warranty on a product purchased from Amazon India, follow these steps:
+- Step 1: Download the PDF tax invoice from "Your Orders" -> "Download Invoice" -> "Tax Invoice".
+- Step 2: Take a printout of the tax invoice.
+- Step 3: Visit the nearest authorized service center of the brand. The tax invoice contains the purchase date and the unique serial number or IMEI of the device (if applicable), which acts as official warranty proof.
+- Note: Customers do not need physical warranty cards stamped by the seller. The tax invoice is legally recognized across India as proof of warranty.
+
+3. AMAZON EXTENDED WARRANTY AND PROTECTION PLANS
+Amazon India offers optional extended warranty and protection plans (partnered with Acko or OneAssist) for mobiles, laptops, and appliances:
+- The plan must be purchased on the same day as the product.
+- It covers accidental screen damage, liquid damage, and mechanical breakdowns beyond the brand's 1-year warranty period.
+- Claims can be filed directly on the partner portal (Acko/OneAssist) using the plan ID received via email. Amazon support can assist in retrieving plan IDs or routing calls to the partner helpdesk.

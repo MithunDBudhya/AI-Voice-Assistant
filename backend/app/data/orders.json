@@ -1,30 +1,134 @@
 [
   {
-    "order_id": "1023",
-    "customer_name": "Rahul",
+    "order_id": "403-8756412-0983421",
+    "customer_name": "Rahul Sharma",
+    "customer_phone": "+919876543210",
     "status": "Out for delivery",
     "expected_delivery": "Today by 7 PM",
-    "product": "Bluetooth Headphones"
+    "product": "OnePlus 12 5G Smart Phone",
+    "amount": 64999,
+    "courier": "ATS (Amazon Transportation Services)",
+    "tracking_number": "ATS4038756412"
   },
   {
-    "order_id": "2045",
-    "customer_name": "Anjali",
+    "order_id": "407-1234567-9876543",
+    "customer_name": "Anjali Reddy",
+    "customer_phone": "+919988776655",
     "status": "Refund initiated",
-    "expected_delivery": "Refund will be completed in 3 working days",
-    "product": "Smart Watch"
+    "expected_delivery": "Refund will be credited in 2-4 business days",
+    "product": "MacBook Air M3 Laptop",
+    "amount": 114900,
+    "courier": "Blue Dart",
+    "tracking_number": "BD987654321"
   },
   {
-    "order_id": "3301",
-    "customer_name": "Vikram",
+    "order_id": "405-3301889-1122334",
+    "customer_name": "Vikram Nair",
+    "customer_phone": "+919876543210",
     "status": "Delayed",
-    "expected_delivery": "Tomorrow by 6 PM",
-    "product": "Laptop Stand"
+    "expected_delivery": "Tomorrow by 6 PM due to local logistics delays",
+    "product": "Kindle Paperwhite (16 GB)",
+    "amount": 14999,
+    "courier": "ATS (Amazon Transportation Services)",
+    "tracking_number": "ATS405330188"
   },
   {
-    "order_id": "7788",
-    "customer_name": "Meera",
+    "order_id": "408-7788991-0011223",
+    "customer_name": "Meera Iyer",
+    "customer_phone": "+918877665544",
+    "status": "Delivered",
+    "expected_delivery": "Delivered yesterday at 3:45 PM",
+    "product": "Sony WH-1000XM5 Wireless Headphones",
+    "amount": 29999,
+    "courier": "Delhivery",
+    "tracking_number": "DL778899001"
+  },
+  {
+    "order_id": "403-4412555-1234567",
+    "customer_name": "Rahul Sharma",
+    "customer_phone": "+919876543210",
+    "status": "Processing",
+    "expected_delivery": "Expected to ship in 24 hours",
+    "product": "Echo Dot (5th Gen) Smart Speaker",
+    "amount": 5499,
+    "courier": "Pending assignment",
+    "tracking_number": null
+  },
+  {
+    "order_id": "407-5566333-8888888",
+    "customer_name": "Priya Menon",
+    "customer_phone": "+917766554433",
+    "status": "Shipped",
+    "expected_delivery": "Day after tomorrow by 8 PM",
+    "product": "iPad Air (11-inch, M2)",
+    "amount": 59900,
+    "courier": "ATS (Amazon Transportation Services)",
+    "tracking_number": "ATS407556633"
+  },
+  {
+    "order_id": "403-6789111-2222222",
+    "customer_name": "Kiran Rao",
+    "customer_phone": "+919900990099",
+    "status": "Out for delivery",
+    "expected_delivery": "Today by 9 PM",
+    "product": "Mechanical Keyboard",
+    "amount": 6799,
+    "courier": "Delhivery",
+    "tracking_number": "DL112233445"
+  },
+  {
+    "order_id": "408-8834000-5555555",
+    "customer_name": "Deepa Singh",
+    "customer_phone": "+918888899999",
+    "status": "Delivered",
+    "expected_delivery": "Delivered 2 days ago",
+    "product": "USB-C Hub",
+    "amount": 1599,
+    "courier": "ATS (Amazon Transportation Services)",
+    "tracking_number": "ATS4088834"
+  },
+  {
+    "order_id": "403-9001000-7777777",
+    "customer_name": "Suresh Kumar",
+    "customer_phone": "+919000011111",
+    "status": "Return initiated",
+    "expected_delivery": "Return pickup scheduled for tomorrow",
+    "product": "Samsonite Backpack",
+    "amount": 4999,
+    "courier": "ATS (Amazon Transportation Services)",
+    "tracking_number": "ATS4039001"
+  },
+  {
+    "order_id": "403-1199000-8888888",
+    "customer_name": "Rahul Sharma",
+    "customer_phone": "+919876543210",
+    "status": "Delivered",
+    "expected_delivery": "Delivered yesterday at 11:30 AM",
+    "product": "OnePlus Buds Pro 3",
+    "amount": 11999,
+    "courier": "Blue Dart",
+    "tracking_number": "BD403119900"
+  },
+  {
+    "order_id": "403-2233000-9999999",
+    "customer_name": "Ravi Teja",
+    "customer_phone": "+917777777777",
     "status": "Delivered",
     "expected_delivery": "Delivered yesterday",
-    "product": "Wireless Keyboard"
+    "product": "Smart Speaker",
+    "amount": 3999,
+    "courier": "Delhivery",
+    "tracking_number": "DL223344556"
+  },
+  {
+    "order_id": "403-3456000-1111111",
+    "customer_name": "Sneha Kapoor",
+    "customer_phone": "+919911991199",
+    "status": "Shipped",
+    "expected_delivery": "Tomorrow by 5 PM",
+    "product": "Anker Portable Charger",
+    "amount": 2499,
+    "courier": "DTDC",
+    "tracking_number": "DTDC34567890"
   }
 ]

@@ -12,7 +12,7 @@ const Topbar = () => {
           <input 
             type="text" 
             placeholder="Search tickets, calls..." 
-            className="pl-10 pr-4 py-2 bg-slate-950/50 border border-slate-800 rounded-lg focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-all text-sm w-64"
+            className="pl-10 pr-4 py-2 bg-slate-950/50 border border-slate-800 rounded-lg focus:outline-none focus:border-orange-500 focus:ring-1 focus:ring-orange-500 transition-all text-sm w-64"
           />
         </div>
       </div>
@@ -28,7 +28,7 @@ const Topbar = () => {
         )}
         <button className="text-slate-400 hover:text-slate-200 transition-colors relative">
           <Bell className="w-5 h-5" />
-          <span className="absolute top-0 right-0 w-2 h-2 bg-indigo-500 rounded-full"></span>
+          <span className="absolute top-0 right-0 w-2 h-2 bg-orange-500 rounded-full"></span>
         </button>
         <div className="w-px h-6 bg-slate-800 mx-2"></div>
         <button className="flex items-center text-slate-300 hover:text-white transition-colors">

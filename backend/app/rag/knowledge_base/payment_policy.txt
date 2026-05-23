@@ -1,0 +1,23 @@
+AMAZON INDIA PAYMENT POLICY — OFFICIAL REFERENCE
+
+Last Updated: May 2026
+
+1. ACCEPTED PAYMENT METHODS
+Amazon India offers multiple convenient payment options during checkout:
+- Amazon Pay UPI: Customers can link their bank account and pay instantly using a UPI PIN. No transactional charges apply.
+- Credit / Debit Cards: We accept Visa, Mastercard, RuPay, and American Express.
+- Net Banking: Supported for all major banks in India.
+- Cash on Delivery (COD): Available for order values up to ₹49,999. A convenience fee of ₹40 may apply for COD orders below ₹499. Payment can be made in cash, or digitally via UPI scan-and-pay at the door.
+- Amazon Pay Balance: Pre-loaded money in the digital wallet. Quickest checkout method.
+
+2. EQUATED MONTHLY INSTALLMENTS (EMI)
+For high-value purchases, Amazon India offers No Cost EMI and standard EMI options:
+- No Cost EMI: Available on selected credit cards, Amazon Pay Late, and select debit cards. The interest charged by the bank is given as an upfront discount, making the effective interest rate 0%.
+- Standard EMI: Available for periods of 3, 6, 9, 12, 18, and 24 months, with interest rates varying from 13% to 16% per annum depending on the bank.
+- Cancellation and EMI Refund: If an order placed on EMI is cancelled or returned, the purchase amount is refunded to the card. However, processing fees charged by the bank during the transaction (usually ₹199 + GST) are non-refundable.
+
+3. UPI DISPUTES AND REFUNDS
+In case of a failed payment where the bank reports a successful transaction but Amazon shows a failure:
+- The payment status is updated automatically within 24 hours.
+- If not updated, the transaction is marked as a dispute. A refund is processed back to the original bank account within 2-4 business days.
+- If a customer disputes a transaction, they should share their UPI Transaction ID (starts with 3 or 4 and is 12 digits long) with Amazon support for tracking.

@@ -1,0 +1,24 @@
+AMAZON INDIA COMPLAINT REGISTRATION AND RETURN POLICY
+
+Last Updated: May 2026
+
+1. COMPLAINT REGISTRATION
+When a customer reports an issue that cannot be resolved immediately (e.g., damaged items, lost packages, payment disputes), the customer support system registers a formal complaint.
+- A unique support Ticket ID (format: TKT-XXXXXXXX) is generated automatically.
+- High Priority: Assigned to urgent issues like payment failed but money deducted, delivery delays of more than 5 days, or account lockouts. High priority tickets require supervisor review and are resolved within 2-4 hours.
+- Medium Priority: Assigned to return pick-up failures, Prime billing queries, or wrong item complaints. These are resolved within 24-48 hours.
+
+2. RETURN WINDOWS AND REPLACEMENTS
+Different product categories on Amazon India have specific return and replacement windows:
+- Electronics & Mobiles: Most electronics, laptops, tablets, and smartphones have a 10-day return window. The policy is usually "Replacement Only". If the product is defective, a free replacement of the same model will be shipped. A refund is issued ONLY if the item is out of stock.
+- Fashion & Clothing: Apparels, shoes, and fashion accessories have a 30-day return window. Customers can request a size exchange, replacement, or a full refund.
+- Home & Kitchen Appliances: Have a 10-day return window. Eligible for free replacement if damaged in transit or defective.
+- Non-Returnable Items: Grocery, beauty products, personal care appliances, and software are non-returnable. If damaged, a refund can be authorized by support agents on a case-by-case basis.
+
+3. WRONG OR DAMAGED ITEM PROCESS
+If a wrong product is delivered (e.g., received a phone cover instead of a phone) or the product is physically damaged:
+- Take photos/videos of the package and item as proof.
+- Do not throw away the original box or outer packaging.
+- Register a complaint within 10 days of delivery.
+- Amazon India will dispatch a return pickup agent. The pickup agent will verify the physical condition of the item and match the serial number/IMEI before accepting the return. Once picked up, a replacement or refund is triggered.
+- For high-value electronics (above ₹20,000), support agents may require an internal investigation (takes 3-5 business days) before approving the refund or replacement.

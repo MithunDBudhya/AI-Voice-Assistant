@@ -1,1 +1,24 @@
-Customers can request a refund within 7 days of delivery if the product is unused, undamaged, and returned with original invoice and packaging. Refunds are processed within 3 to 5 working days after quality inspection.
+AMAZON INDIA REFUND POLICY — OFFICIAL CUSTOMER SUPPORT REFERENCE
+
+Last Updated: May 2026
+
+1. REFUND TIMELINES AND METHODS
+Once a returned item is received at the Amazon India fulfillment center, a quality check is performed within 24-48 hours. After successful quality inspection, the refund is issued to the customer's selected payment method. The refund credit timelines are:
+- Amazon Pay Balance: Processed within 2 hours of inspection approval.
+- Amazon Pay UPI / Linked Bank Account: Processed within 2 to 4 business days.
+- Net Banking: Processed within 2 to 4 business days.
+- Credit Card / Debit Card: Processed within 3 to 5 business days, depending on the issuing bank.
+- Cash on Delivery (COD): Refund is credited to the customer's bank account via NEFT (takes 2-4 business days once bank details are updated) or directly as Amazon Pay Balance (takes 2 hours).
+
+2. REFUND OF SHIPPING FEES
+If the return is due to an Amazon India error (e.g., wrong item received, defective product, damaged in transit), the entire shipping fee (if any) paid during purchase will be fully refunded. If the return is voluntary (e.g., customer changed mind, size did not fit but product matches description), the original shipping fee of ₹40 is not refundable, and a return pick-up fee may be deducted depending on the product category.
+
+3. AMAZON A-TO-Z GUARANTEE
+For purchases made from third-party sellers on the Amazon India Marketplace, customers are protected by the Amazon A-to-z Guarantee. This guarantee covers:
+- Orders that are delayed by more than 3 days after the maximum estimated delivery date.
+- Items received that are damaged, defective, or materially different from what was described.
+- Cases where the seller fails to issue a refund despite receiving the return.
+A-to-z Guarantee claims can be submitted up to 90 days after the estimated delivery date, and the maximum claim value is ₹2,500.
+
+4. REFUND STATUS AND FAQS
+Customers can check their refund status under "Your Orders" -> "View Return/Refund Status". If a refund is marked as "Refunded" in the Amazon portal but has not reflected in the bank statement, customers should wait for the maximum business day limit of their payment method (up to 5 days for cards) and contact their bank with the refund RRN (Retrieval Reference Number) provided by Amazon support.

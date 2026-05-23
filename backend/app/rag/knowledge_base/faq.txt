@@ -1,1 +1,25 @@
-Customers can track orders using their order ID. For payment failures, customers should wait 30 minutes and check whether money was refunded automatically. For urgent support, customers can request human escalation.
+AMAZON INDIA FAQ & SUPPORT PROCEDURES — OFFICIAL REFERENCE
+
+Last Updated: May 2026
+
+1. AMAZON PRIME MEMBERSHIP
+Amazon Prime is a premium subscription program offering benefits to customers in India:
+- Free delivery: Free One-Day, Two-Day, and Standard Delivery on eligible items. No minimum order value required.
+- Prime Video & Prime Music: Unlimited ad-free music streaming and access to exclusive movies, TV shows, and Amazon Originals.
+- Prime Reading: Free access to a curated selection of eBooks.
+- Early Access: 24-hour early access to major sale events like Prime Day, Great Indian Festival, and Lightning Deals.
+- Prime Pricing: Subscription costs ₹1,499 for 1 year, ₹599 for 3 months, or ₹299 for 1 month.
+
+2. PAYMENT FAILURES AND DOUBLE CHARGES
+If money is deducted from your bank account but the order is not placed (marked as "Payment Failed"):
+- Do not panic. The money is held in a bank transit pool and is completely safe.
+- UPI / Net Banking: Refund is initiated automatically and will revert to the original bank account within 3 to 5 business days.
+- Credit / Debit Card: Reversal occurs automatically within 5 to 7 business days.
+- Customers can check the refund status directly in the Amazon Pay dashboard under "Transactions". If the reversal is delayed, customer support can issue a Bank Reference Number (ARN/RRN) to trace the transaction with your bank.
+
+3. TAX INVOICE AND WARRANTY CLAIMS
+To claim warranty on any product purchased from Amazon India:
+- Go to "Your Orders" on the Amazon app/website.
+- Locate the specific product and click on "Download Invoice". Select "Tax Invoice" to download the PDF.
+- Print the tax invoice and take it along with the product to any brand-authorized service center. The invoice serves as official proof of purchase and warranty start date.
+- Note: Amazon India does not directly issue warranty cards. The invoice is sufficient for brand service centers across India.

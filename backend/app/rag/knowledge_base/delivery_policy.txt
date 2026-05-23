@@ -1,1 +1,26 @@
-Standard delivery takes 3 to 5 working days. Same-day delivery is available only in selected cities. If an order is delayed beyond the promised date, the customer can request a support ticket or callback.
+AMAZON INDIA SHIPPING AND DELIVERY POLICY — OFFICIAL CUSTOMER SUPPORT REFERENCE
+
+Last Updated: May 2026
+
+1. DELIVERY SPEEDS AND SHIPPING FEES
+Amazon India offers several shipping speeds. Eligible pin codes receive:
+- One-Day Delivery: Free for Amazon Prime members. Non-Prime members pay ₹150 per order.
+- Two-Day Delivery: Free for Amazon Prime members. Non-Prime members pay ₹120 per order.
+- Same-Day Delivery: Free for Prime members in selected metro cities for orders above ₹499. For non-Prime members, Same-Day delivery costs ₹175.
+- Standard Delivery: Delivers within 2-4 business days. Free for Prime members. Non-Prime members get free standard shipping on orders of ₹499 or more; otherwise, a flat ₹40 shipping fee applies.
+
+2. LOGISTICS AND CARRIERS
+Amazon India orders are primarily fulfilled via ATS (Amazon Transportation Services), our in-house courier partner. We also partner with premium third-party courier services such as Blue Dart, Delhivery, DTDC, and Ecom Express to ensure coverage across over 19,000 pin codes. The assigned courier and tracking number (e.g., ATS87564120, BD11993425) are shared via SMS and the Amazon.in order tracking dashboard immediately upon package dispatch.
+
+3. LOGISTICAL AND DELIVERY DELAYS
+Occasionally, shipments may experience delays due to unforeseen logistics issues, extreme weather conditions, or local disruptions. In such cases, the expected delivery date will automatically update on the customer's portal. If a package does not arrive by the revised expected date, customers are advised to wait for 24-48 hours. If the delay exceeds 3 business days beyond the original window, customers can request supervisor escalation or initiate a refund.
+
+4. DELIVERED BUT NOT RECEIVED ISSUES
+If an order's status is marked as "Delivered" on the tracking portal but the customer has not received the package:
+- Check with family members, security personnel at the apartment gate, or neighbors who might have accepted the delivery.
+- Verify if a secure drop-off photo was uploaded by the ATS delivery agent.
+- Allow 24 hours as couriers sometimes scan packages as delivered prematurely.
+- If the package is still missing after 24 hours, the customer must report it to Amazon support within 30 days of the marked delivery date to qualify for a free replacement or refund.
+
+5. PACKAGE DAMAGED IN TRANSIT
+If a shipment is visibly damaged upon delivery, customers can refuse to accept it. The ATS delivery agent will return the package to the fulfillment center, and a replacement or full refund will be processed automatically. If the damage is discovered after opening the box, please refer to the Amazon India return window and file a complaint within 10 days of delivery.
