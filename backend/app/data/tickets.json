@@ -46,5 +46,44 @@
     "created_at": "2026-05-23T08:31:40.515027",
     "updated_at": "2026-05-23T08:31:40.515027",
     "timestamp": "2026-05-23T08:31:40.515027"
+  },
+  {
+    "ticket_id": "TKT-16A2BFDD",
+    "caller_phone": "+919876543210",
+    "reason": "Customer requested urgent human escalation",
+    "priority": "High",
+    "transcript": "I am extremely angry, connect me to a supervisor right now! This is unacceptable!",
+    "status": "Open",
+    "assigned_to": null,
+    "resolution_notes": null,
+    "created_at": "2026-05-23T08:56:50.243993",
+    "updated_at": "2026-05-23T08:56:50.243993",
+    "timestamp": "2026-05-23T08:56:50.243993"
+  },
+  {
+    "ticket_id": "TKT-1212F21E",
+    "caller_phone": "+919876543210",
+    "reason": "Customer requested urgent human escalation",
+    "priority": "High",
+    "transcript": "I am extremely angry, connect me to a supervisor right now! This is unacceptable!",
+    "status": "Open",
+    "assigned_to": null,
+    "resolution_notes": null,
+    "created_at": "2026-05-23T09:15:16.743626",
+    "updated_at": "2026-05-23T09:15:16.743626",
+    "timestamp": "2026-05-23T09:15:16.743626"
+  },
+  {
+    "ticket_id": "TKT-31B3762E",
+    "caller_phone": "+919876543210",
+    "reason": "Customer requested urgent human escalation",
+    "priority": "High",
+    "transcript": "I am extremely angry, connect me to a supervisor right now! This is unacceptable!",
+    "status": "Open",
+    "assigned_to": null,
+    "resolution_notes": null,
+    "created_at": "2026-05-23T09:15:40.197825",
+    "updated_at": "2026-05-23T09:15:40.197825",
+    "timestamp": "2026-05-23T09:15:40.197825"
   }
 ]

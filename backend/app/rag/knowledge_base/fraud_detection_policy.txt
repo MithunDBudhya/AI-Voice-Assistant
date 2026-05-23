@@ -1,0 +1,7 @@
+AMAZON INDIA FRAUD DETECTION AND RISK MANAGEMENT
+Last Updated: May 2026
+
+1. PREVENTING FRAUDULENT TRANSACTIONS
+- Address Verification: System flags accounts ordering high-value products to unverified addresses.
+- COD Limitations: Cash on Delivery is disabled for accounts with a high return-to-origin (RTO) rate.
+- Order Cancellation: Suspicious orders are placed on hold for 24 hours. Customers must upload identity proof or the order is automatically cancelled.

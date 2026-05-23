@@ -1,0 +1,8 @@
+AMAZON INDIA DELIVERY EXCEPTION POLICY
+Last Updated: May 2026
+
+1. EXCEPTION CATEGORIES
+ATS delivery agents face exceptions like:
+- Customer Unavailable: Agent makes 3 delivery attempts on consecutive days.
+- Incorrect Address: The customer is contacted via phone to update coordinates.
+- Gate Security Restriction: Packages can be left with society guards or at the reception desk with the customer's prior SMS permission.

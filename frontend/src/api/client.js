@@ -81,3 +81,49 @@ export const getDocuments = async () => {
   const response = await apiClient.get('/rag/documents');
   return response.data;
 };
+
+export const createDocument = async (filename, content, category = 'General', comment = 'Initial creation') => {
+  const response = await apiClient.post('/rag/documents', { filename, content, category, comment });
+  return response.data;
+};
+
+export const updateDocument = async (filename, content, comment = 'Updated policy') => {
+  const formData = new FormData();
+  formData.append('content', content);
+  formData.append('comment', comment);
+  const response = await apiClient.put(`/rag/documents/${filename}`, formData, {
+    headers: { 'Content-Type': 'multipart/form-data' }
+  });
+  return response.data;
+};
+
+export const deleteDocument = async (filename) => {
+  const response = await apiClient.delete(`/rag/documents/${filename}`);
+  return response.data;
+};
+
+export const uploadDocument = async (file, comment = 'File uploaded') => {
+  const formData = new FormData();
+  formData.append('file', file);
+  formData.append('comment', comment);
+  const response = await apiClient.post('/rag/documents/upload', formData, {
+    headers: { 'Content-Type': 'multipart/form-data' }
+  });
+  return response.data;
+};
+
+export const getDocumentHistory = async (filename) => {
+  const response = await apiClient.get(`/rag/documents/${filename}/history`);
+  return response.data;
+};
+
+export const getRetrievalLogs = async () => {
+  const response = await apiClient.get('/rag/retrieval/logs');
+  return response.data;
+};
+
+export const getRetrievalAnalytics = async () => {
+  const response = await apiClient.get('/rag/retrieval/analytics');
+  return response.data;
+};
+

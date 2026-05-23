@@ -1,0 +1,8 @@
+AMAZON INDIA LATE REFUND INVESTIGATION
+Last Updated: May 2026
+
+1. BANK DELAYS AND INVESTIGATION
+If a refund is processed by Amazon but not received in the customer's bank within 5 business days:
+- Acquirer Reference Number (ARN): Amazon support provides an ARN code.
+- Bank Tracking: The customer can share the ARN with their bank branch to trace the credit.
+- Bank Hold: Often banks place refunds in a temporary settlement pool; the ARN resolves this.

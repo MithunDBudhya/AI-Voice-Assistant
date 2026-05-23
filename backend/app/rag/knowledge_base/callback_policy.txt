@@ -1,0 +1,7 @@
+AMAZON INDIA CALLBACK BOOKING RULES
+Last Updated: May 2026
+
+1. BOOKING SCHEDULING
+- Callback Option: Customers can request a call from an agent through the contact center.
+- Availability: Callbacks are scheduled between 8:00 AM and 8:00 PM.
+- Agent Verification: The agent will call the registered phone number. If the call is missed, the agent will attempt two more times at 15-minute intervals. If all fail, the ticket is set to pending and the customer must reschedule.

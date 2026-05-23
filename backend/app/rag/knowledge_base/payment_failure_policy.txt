@@ -1,0 +1,8 @@
+AMAZON INDIA PAYMENT FAILURE POLICY — DOUBLE DEDUCTION HELP
+Last Updated: May 2026
+
+1. FAILED TRANSACTIONS AND DEDUCTIONS
+If a payment fails during checkout but the customer's bank account or credit card is charged:
+- Automatic Refund: The payment gateway detects the failed order and initiates a reversal.
+- Timelines: Reversals occur within 24-48 hours for UPI, and 3-5 business days for banks.
+- Support Verification: Customers are requested to wait 24 hours. Support agents do not create refund tickets for failed orders until the transaction status is finalized.

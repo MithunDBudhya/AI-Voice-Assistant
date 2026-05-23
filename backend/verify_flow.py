@@ -17,8 +17,14 @@ def run_test(name, payload):
             print(f"Intent detected: {data.get('intent')} (Confidence: {data.get('intent_confidence')})")
             print(f"Sentiment: {data.get('sentiment')} (Score: {data.get('sentiment_score')})")
             print(f"Tool used: {data.get('tool_used')}")
-            print(f"Answer: {data.get('answer')}")
-            print(f"Summary: {data.get('summary')}")
+            try:
+                print(f"Answer: {data.get('answer')}")
+            except UnicodeEncodeError:
+                print(f"Answer: {data.get('answer').encode('ascii', 'replace').decode('ascii')}")
+            try:
+                print(f"Summary: {data.get('summary')}")
+            except UnicodeEncodeError:
+                print(f"Summary: {data.get('summary').encode('ascii', 'replace').decode('ascii')}")
             print(f"Response Time: {data.get('response_time_ms')}ms")
             return data
         else:

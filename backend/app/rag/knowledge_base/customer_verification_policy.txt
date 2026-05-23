@@ -1,0 +1,8 @@
+AMAZON INDIA CUSTOMER VERIFICATION RULES
+Last Updated: May 2026
+
+1. SECURITY CHECKS BEFORE ACCOUNT CHANGES
+To prevent unauthorized access and data breaches, support agents must verify the caller:
+- Required Info: Caller's full name, registered email address, or phone number.
+- Transaction Verification: For order details, the customer must confirm the last 4 digits of the card used, or the order date and item name.
+- OTP Verification: A One-Time Password (OTP) is sent to the registered mobile for high-risk changes (e.g., email or shipping address update).

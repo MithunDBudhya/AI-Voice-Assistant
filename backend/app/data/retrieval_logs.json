@@ -1,0 +1,10 @@
+[
+  {
+    "timestamp": "2026-05-23T09:16:39.092105",
+    "query": "What details do you need to verify my identity?",
+    "source": "temp_verification_policy.txt",
+    "confidence": 0.4523997902870178,
+    "latency_ms": 3107.8,
+    "hits": 3
+  }
+]

@@ -145,7 +145,13 @@ async def voice_webhook(request: Request):
             return {"assistant": {"content": "I'm experiencing technical difficulties. Please try again."}}
 
 
-# ── RAG ────────────────────────────────────────────────────────────────────
+# ── RAG & Document Management ────────────────────────────────────────────────
+from fastapi import File, UploadFile, Form
+import shutil
+from datetime import datetime
+from app.rag.history import load_metadata, register_policy_change, delete_policy_metadata, get_policy_history
+from app.rag.parser import extract_text_from_file
+
 @app.post("/rag/ingest", tags=["RAG"])
 def rag_ingest():
     """Ingest all documents from the knowledge base into the vector store."""
@@ -167,26 +173,200 @@ def rag_query_endpoint(request: QueryRequest):
 
 @app.get("/rag/documents", tags=["RAG"])
 def get_documents():
-    """List all documents currently in the knowledge base."""
+    """List all documents currently in the knowledge base with details."""
     docs_dir = settings.KNOWLEDGE_BASE_DIR
     if not os.path.exists(docs_dir):
-        return {"documents": []}
+        return {"documents": [], "total": 0}
 
+    # Ensure default policies are initialized if not present
+    from app.rag.default_policies import write_default_policies
+    write_default_policies()
+
+    meta = load_metadata()
     files = []
+    
     for filename in os.listdir(docs_dir):
-        if filename.endswith(".txt"):
+        if filename.lower().endswith((".txt", ".md", ".markdown", ".html", ".htm", ".pdf", ".docx")):
             filepath = os.path.join(docs_dir, filename)
             size = os.path.getsize(filepath)
-            with open(filepath, "r", encoding="utf-8") as f:
-                content = f.read()
+            
+            doc_meta = meta.get(filename, {})
+            if not doc_meta:
+                try:
+                    content = extract_text_from_file(filepath)
+                    register_policy_change(filename, filepath, content, "Auto registered by system")
+                    meta = load_metadata()
+                    doc_meta = meta.get(filename, {})
+                except Exception:
+                    pass
+            
             files.append({
                 "filename": filename,
                 "size_bytes": size,
-                "word_count": len(content.split()),
-                "status": "indexed"
+                "word_count": doc_meta.get("word_count", len(filename.split())),
+                "category": doc_meta.get("category", "General"),
+                "version": doc_meta.get("version", 1),
+                "last_updated": doc_meta.get("last_updated", datetime.fromtimestamp(os.path.getmtime(filepath)).isoformat()),
+                "status": doc_meta.get("status", "indexed")
             })
 
     return {"documents": files, "total": len(files)}
+
+
+class PolicyCreateRequest(BaseModel):
+    filename: str
+    content: str
+    category: Optional[str] = None
+    comment: Optional[str] = "Initial registration"
+
+
+@app.post("/rag/documents", tags=["RAG"])
+def create_policy_document(req: PolicyCreateRequest):
+    """Add a new text policy document and auto re-index."""
+    docs_dir = settings.KNOWLEDGE_BASE_DIR
+    filename = req.filename
+    if not filename.endswith((".txt", ".md")):
+        filename += ".txt"
+        
+    filepath = os.path.join(docs_dir, filename)
+    if os.path.exists(filepath):
+        raise HTTPException(status_code=400, detail=f"Document {filename} already exists. Use PUT to edit.")
+
+    try:
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(req.content.strip())
+            
+        register_policy_change(filename, filepath, req.content, req.comment)
+        ingest_documents()
+        return {"status": "success", "message": f"Document {filename} created and indexed."}
+    except Exception as e:
+        if os.path.exists(filepath):
+            os.remove(filepath)
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.put("/rag/documents/{filename}", tags=["RAG"])
+def update_policy_document(filename: str, content: str = Form(...), comment: str = Form("Policy updated")):
+    """Edit/update an existing policy document and auto re-index."""
+    docs_dir = settings.KNOWLEDGE_BASE_DIR
+    filepath = os.path.join(docs_dir, filename)
+    if not os.path.exists(filepath):
+        raise HTTPException(status_code=404, detail=f"Document {filename} not found.")
+
+    try:
+        with open(filepath, "w", encoding="utf-8") as f:
+            f.write(content.strip())
+            
+        register_policy_change(filename, filepath, content, comment)
+        ingest_documents()
+        return {"status": "success", "message": f"Document {filename} updated to new version and re-indexed."}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.delete("/rag/documents/{filename}", tags=["RAG"])
+def delete_policy_document(filename: str):
+    """Delete a policy document from disk and vector DB."""
+    docs_dir = settings.KNOWLEDGE_BASE_DIR
+    filepath = os.path.join(docs_dir, filename)
+    if not os.path.exists(filepath):
+        raise HTTPException(status_code=404, detail=f"Document {filename} not found.")
+
+    try:
+        os.remove(filepath)
+        delete_policy_metadata(filename)
+        ingest_documents()
+        return {"status": "success", "message": f"Document {filename} deleted and vector DB updated."}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+@app.post("/rag/documents/upload", tags=["RAG"])
+async def upload_policy_document(file: UploadFile = File(...), comment: str = Form("File uploaded")):
+    """Upload a policy file (PDF, DOCX, TXT, MD, HTML) and auto re-index."""
+    docs_dir = settings.KNOWLEDGE_BASE_DIR
+    filename = file.filename
+    if not filename.lower().endswith((".txt", ".md", ".markdown", ".html", ".htm", ".pdf", ".docx")):
+        raise HTTPException(status_code=400, detail="Unsupported file format. Upload PDF, DOCX, TXT, HTML or MD.")
+        
+    filepath = os.path.join(docs_dir, filename)
+    try:
+        with open(filepath, "wb") as buffer:
+            shutil.copyfileobj(file.file, buffer)
+            
+        content = extract_text_from_file(filepath)
+        register_policy_change(filename, filepath, content, comment)
+        ingest_documents()
+        return {"status": "success", "message": f"File {filename} successfully uploaded and indexed."}
+    except Exception as e:
+        if os.path.exists(filepath):
+            os.remove(filepath)
+        raise HTTPException(status_code=500, detail=f"Upload processing failed: {str(e)}")
+
+
+@app.get("/rag/documents/{filename}/history", tags=["RAG"])
+def get_document_version_history(filename: str):
+    """Get policy change log and history of edits."""
+    history = get_policy_history(filename)
+    return {"filename": filename, "history": history}
+
+
+@app.get("/rag/retrieval/logs", tags=["RAG"])
+def get_retrieval_logs():
+    """Retrieve active semantic search query logs."""
+    log_file = os.path.join(settings.DATA_DIR, "retrieval_logs.json")
+    if not os.path.exists(log_file):
+        return {"logs": []}
+    try:
+        with open(log_file, "r", encoding="utf-8") as f:
+            logs = json.load(f)
+        return {"logs": sorted(logs, key=lambda x: x.get("timestamp"), reverse=True)}
+    except Exception:
+        return {"logs": []}
+
+
+@app.get("/rag/retrieval/analytics", tags=["RAG"])
+def get_retrieval_analytics():
+    """Calculate RAG search speeds, confidence ratings, and hit distributions."""
+    log_file = os.path.join(settings.DATA_DIR, "retrieval_logs.json")
+    if not os.path.exists(log_file):
+        return {
+            "total_queries": 0,
+            "avg_latency_ms": 0.0,
+            "avg_confidence": 0.0,
+            "hits_distribution": []
+        }
+    try:
+        with open(log_file, "r", encoding="utf-8") as f:
+            logs = json.load(f)
+    except Exception:
+        logs = []
+
+    if not logs:
+        return {
+            "total_queries": 0,
+            "avg_latency_ms": 0.0,
+            "avg_confidence": 0.0,
+            "hits_distribution": []
+        }
+
+    total = len(logs)
+    avg_latency = round(sum(l.get("latency_ms", 0.0) for l in logs) / total, 1)
+    avg_conf = round(sum(l.get("confidence", 0.0) for l in logs) / total * 100, 1)
+
+    hits = {}
+    for l in logs:
+        src = l.get("source", "none")
+        if src != "none":
+            hits[src] = hits.get(src, 0) + 1
+
+    return {
+        "total_queries": total,
+        "avg_latency_ms": avg_latency,
+        "avg_confidence": avg_conf,
+        "hits_distribution": [{"name": k, "value": v} for k, v in hits.items()]
+    }
+
 
 
 # ── Tickets ────────────────────────────────────────────────────────────────
