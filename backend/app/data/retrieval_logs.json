@@ -6,5 +6,285 @@
     "confidence": 0.4523997902870178,
     "latency_ms": 3107.8,
     "hits": 3
+  },
+  {
+    "timestamp": "2026-05-23T09:20:13.738487",
+    "query": "\u0c28\u0c2e\u0c38\u0c4d\u0c15\u0c3e\u0c30\u0c02 \u0c05\u0c02\u0c21\u0c3f",
+    "source": "refund_policy.txt",
+    "confidence": 0.0949813723564148,
+    "latency_ms": 124.4,
+    "hits": 0
+  },
+  {
+    "timestamp": "2026-05-23T09:20:44.120394",
+    "query": "I want to track my order my order number is",
+    "source": "delivery_policy.txt",
+    "confidence": 0.4660475254058838,
+    "latency_ms": 149.7,
+    "hits": 3
+  },
+  {
+    "timestamp": "2026-05-23T09:48:19.048661",
+    "query": "where is my order?",
+    "source": "delivery_policy.txt",
+    "confidence": 0.36107245087623596,
+    "latency_ms": 4297.2,
+    "hits": 3
+  },
+  {
+    "timestamp": "2026-05-23T09:48:20.182213",
+    "query": "Track order 403-8756412-0983421",
+    "source": "delivery_policy.txt",
+    "confidence": 0.33931031823158264,
+    "latency_ms": 46.9,
+    "hits": 1
+  },
+  {
+    "timestamp": "2026-05-23T09:48:20.549037",
+    "query": "What are the benefits of Amazon Prime?",
+    "source": "faq.txt",
+    "confidence": 0.6781385540962219,
+    "latency_ms": 52.5,
+    "hits": 3
+  },
+  {
+    "timestamp": "2026-05-23T09:48:20.958503",
+    "query": "My package is marked delivered but not received",
+    "source": "delivery_policy.txt",
+    "confidence": 0.734069287776947,
+    "latency_ms": 52.9,
+    "hits": 3
+  },
+  {
+    "timestamp": "2026-05-23T09:48:21.535637",
+    "query": "I am extremely angry, connect me to a supervisor right now! This is unacceptable!",
+    "source": "escalation_policy.txt",
+    "confidence": 0.24534156918525696,
+    "latency_ms": 60.0,
+    "hits": 0
+  },
+  {
+    "timestamp": "2026-05-23T09:48:21.988904",
+    "query": "Can you book a callback for tomorrow morning?",
+    "source": "callback_policy.txt",
+    "confidence": 0.5343230962753296,
+    "latency_ms": 48.5,
+    "hits": 3
+  },
+  {
+    "timestamp": "2026-05-23T09:48:33.355560",
+    "query": "\u092e\u0947\u0930\u093e \u0911\u0930\u094d\u0921\u0930 \u0915\u0939\u093e\u0901 \u0939\u0948?",
+    "source": "shipping_policy.txt",
+    "confidence": 0.22017432749271393,
+    "latency_ms": 52.7,
+    "hits": 0
+  },
+  {
+    "timestamp": "2026-05-23T09:49:14.360261",
+    "query": "\u092e\u0947\u0930\u093e \u0911\u0930\u094d\u0921\u0930 \u0915\u0939\u093e\u0901 \u0939\u0948?",
+    "source": "shipping_policy.txt",
+    "confidence": 0.22017432749271393,
+    "latency_ms": 45.0,
+    "hits": 0
+  },
+  {
+    "timestamp": "2026-05-23T09:50:01.077935",
+    "query": "\u092e\u0947\u0930\u093e \u0911\u0930\u094d\u0921\u0930 \u0915\u0939\u093e\u0901 \u0939\u0948?",
+    "source": "shipping_policy.txt",
+    "confidence": 0.22017432749271393,
+    "latency_ms": 50.3,
+    "hits": 0
+  },
+  {
+    "timestamp": "2026-05-23T09:51:11.215756",
+    "query": "\u092e\u0947\u0930\u093e \u0911\u0930\u094d\u0921\u0930 \u0915\u0939\u093e\u0901 \u0939\u0948?",
+    "source": "shipping_policy.txt",
+    "confidence": 0.22017432749271393,
+    "latency_ms": 3123.8,
+    "hits": 0
+  },
+  {
+    "timestamp": "2026-05-23T09:51:21.747717",
+    "query": "\u092e\u0947\u0930\u093e \u0911\u0930\u094d\u0921\u0930 \u0915\u0939\u093e\u0901 \u0939\u0948?",
+    "source": "shipping_policy.txt",
+    "confidence": 0.22017432749271393,
+    "latency_ms": 52.3,
+    "hits": 0
+  },
+  {
+    "timestamp": "2026-05-23T09:51:22.172573",
+    "query": "mera order kab tak milega?",
+    "source": "delivery_policy.txt",
+    "confidence": 0.18012146651744843,
+    "latency_ms": 49.8,
+    "hits": 0
+  },
+  {
+    "timestamp": "2026-05-23T09:51:22.625282",
+    "query": "\u0c28\u0c3e \u0c06\u0c30\u0c4d\u0c21\u0c30\u0c4d \u0c0e\u0c15\u0c4d\u0c15\u0c21 \u0c09\u0c02\u0c26\u0c3f?",
+    "source": "escalation_policy.txt",
+    "confidence": 0.09769437462091446,
+    "latency_ms": 46.7,
+    "hits": 0
+  },
+  {
+    "timestamp": "2026-05-23T09:51:23.409806",
+    "query": "\u0ca8\u0ca8\u0ccd\u0ca8 \u0c86\u0cb0\u0ccd\u0ca1\u0cb0\u0ccd \u0c8e\u0cb2\u0ccd\u0cb2\u0cbf\u0ca6\u0cc6?",
+    "source": "return_policy.txt",
+    "confidence": 0.1353474259376526,
+    "latency_ms": 55.8,
+    "hits": 0
+  },
+  {
+    "timestamp": "2026-05-23T09:51:23.929622",
+    "query": "where is my order?",
+    "source": "delivery_policy.txt",
+    "confidence": 0.36107245087623596,
+    "latency_ms": 43.8,
+    "hits": 3
+  },
+  {
+    "timestamp": "2026-05-23T09:56:10.261242",
+    "query": "I want to track my order",
+    "source": "delivery_policy.txt",
+    "confidence": 0.4557890295982361,
+    "latency_ms": 144.9,
+    "hits": 3
+  },
+  {
+    "timestamp": "2026-05-23T09:56:54.879772",
+    "query": "I want to",
+    "source": "warranty_policy.txt",
+    "confidence": 0.12691298127174377,
+    "latency_ms": 158.4,
+    "hits": 0
+  },
+  {
+    "timestamp": "2026-05-23T09:56:56.204953",
+    "query": "my order",
+    "source": "replacement_policy.txt",
+    "confidence": 0.33164703845977783,
+    "latency_ms": 175.5,
+    "hits": 3
+  },
+  {
+    "timestamp": "2026-05-23T09:58:18.958129",
+    "query": "what is the status of my order 3301",
+    "source": "delivery_policy.txt",
+    "confidence": 0.4043566584587097,
+    "latency_ms": 165.5,
+    "hits": 3
+  },
+  {
+    "timestamp": "2026-05-23T09:58:33.117176",
+    "query": "what is the order number",
+    "source": "delivery_policy.txt",
+    "confidence": 0.4180735647678375,
+    "latency_ms": 149.2,
+    "hits": 3
+  },
+  {
+    "timestamp": "2026-05-23T09:58:42.917010",
+    "query": "what is your refund policy",
+    "source": "faq.txt",
+    "confidence": 0.5324500203132629,
+    "latency_ms": 152.4,
+    "hits": 3
+  },
+  {
+    "timestamp": "2026-05-23T09:58:51.761790",
+    "query": "play video Kannada",
+    "source": "faq.txt",
+    "confidence": 0.22046805918216705,
+    "latency_ms": 138.1,
+    "hits": 0
+  },
+  {
+    "timestamp": "2026-05-23T09:59:15.912811",
+    "query": "what is your refund policy",
+    "source": "faq.txt",
+    "confidence": 0.5324500203132629,
+    "latency_ms": 187.0,
+    "hits": 3
+  },
+  {
+    "timestamp": "2026-05-23T09:59:24.964301",
+    "query": "track my order",
+    "source": "delivery_policy.txt",
+    "confidence": 0.44067442417144775,
+    "latency_ms": 157.4,
+    "hits": 3
+  },
+  {
+    "timestamp": "2026-05-23T10:00:12.010222",
+    "query": "kya this was my order that are talking about",
+    "source": "refund_policy.txt",
+    "confidence": 0.3008042573928833,
+    "latency_ms": 139.6,
+    "hits": 1
+  },
+  {
+    "timestamp": "2026-05-23T10:00:38.086794",
+    "query": "what are the prime benefits",
+    "source": "faq.txt",
+    "confidence": 0.5550469160079956,
+    "latency_ms": 161.6,
+    "hits": 3
+  },
+  {
+    "timestamp": "2026-05-23T10:00:45.727046",
+    "query": "tracking",
+    "source": "delivery_policy.txt",
+    "confidence": 0.5280534029006958,
+    "latency_ms": 158.1,
+    "hits": 3
+  },
+  {
+    "timestamp": "2026-05-23T10:00:52.308954",
+    "query": "bro don't talk bro don't talk",
+    "source": "fraud_detection_policy.txt",
+    "confidence": 0.08297044038772583,
+    "latency_ms": 173.9,
+    "hits": 0
+  },
+  {
+    "timestamp": "2026-05-23T10:55:33.443874",
+    "query": "I want to track my order right now",
+    "source": "delivery_policy.txt",
+    "confidence": 0.40773728489875793,
+    "latency_ms": 377.1,
+    "hits": 3
+  },
+  {
+    "timestamp": "2026-05-23T10:55:42.344310",
+    "query": "this is this is how",
+    "source": "late_refund_policy.txt",
+    "confidence": 0.2314809262752533,
+    "latency_ms": 221.6,
+    "hits": 0
+  },
+  {
+    "timestamp": "2026-05-23T10:55:47.220863",
+    "query": "so this is my chat this",
+    "source": "late_refund_policy.txt",
+    "confidence": 0.17651796340942383,
+    "latency_ms": 653.8,
+    "hits": 0
+  },
+  {
+    "timestamp": "2026-05-23T10:55:49.630796",
+    "query": "told in my language",
+    "source": "delivery_policy.txt",
+    "confidence": 0.18910133838653564,
+    "latency_ms": 213.6,
+    "hits": 0
+  },
+  {
+    "timestamp": "2026-05-23T10:56:21.785932",
+    "query": "how to update its policies Ravi have updated everything I need anything any time they wanted to be updated every month",
+    "source": "warranty_policy.txt",
+    "confidence": 0.2894776165485382,
+    "latency_ms": 232.8,
+    "hits": 0
   }
 ]

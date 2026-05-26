@@ -6,7 +6,7 @@ from datetime import datetime
 from typing import List, Dict, Optional
 
 from app.config import settings
-from app.agent.intent_classifier import detect_intent, detect_sentiment, extract_order_id
+from app.agent.intent_classifier import detect_intent, detect_sentiment, extract_order_id, detect_language
 from app.agent.prompts import get_system_prompt
 from app.services.groq_service import generate_response
 from app.tools.order_tool import get_order_status, get_orders_data
@@ -26,7 +26,8 @@ def handle_call(caller_phone: str, message: str) -> dict:
     call_id = f"call_{str(uuid.uuid4())[:8]}"
     start_time = time.time()
 
-    # Classify intent and sentiment (with confidence scores)
+    # Detect language, classify intent and sentiment (with confidence scores)
+    detected_language = detect_language(message)
     intent, intent_confidence = detect_intent(message)
     sentiment_label, sentiment_score = detect_sentiment(message)
 
@@ -193,7 +194,7 @@ def handle_call(caller_phone: str, message: str) -> dict:
     # ── LLM Naturalization ───────────────────────────────────
     # Get or create session history for this caller
     session_history = _sessions.get(caller_phone, [])
-    system_prompt = get_system_prompt(intent, context)
+    system_prompt = get_system_prompt(intent, context, language=detected_language)
     
     # Observability Trace Logs
     llm_telemetry = {
@@ -267,6 +268,7 @@ def handle_call(caller_phone: str, message: str) -> dict:
         "intent_confidence": intent_confidence,
         "sentiment": sentiment_label,
         "sentiment_score": sentiment_score,
+        "language": detected_language,
         "tool_used": tool_used,
         "source": source,
         "escalated": escalated,
@@ -285,6 +287,7 @@ def handle_call(caller_phone: str, message: str) -> dict:
         "intent_confidence": intent_confidence,
         "sentiment": sentiment_label,
         "sentiment_score": sentiment_score,
+        "language": detected_language,
         "tool_used": tool_used,
         "answer": answer,
         "source": source,

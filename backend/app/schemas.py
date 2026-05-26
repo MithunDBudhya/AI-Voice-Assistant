@@ -13,6 +13,7 @@ class CallResponse(BaseModel):
     intent_confidence: Optional[float] = None
     sentiment: str
     sentiment_score: Optional[float] = None
+    language: Optional[str] = None
     tool_used: str
     answer: str
     source: Optional[str] = None
